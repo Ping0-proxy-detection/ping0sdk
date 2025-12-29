@@ -1,0 +1,19 @@
+{
+    "name": "ping0sdk",
+    "version": "1.0.0",
+    "description": "Ping0 SDK - Detect proxies, VPNs & Suspicious behaviour",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "ping0",
+        "ip-intel",
+        "security",
+        "vpn-detection",
+        "proxy-detection"
+    ],
+    "author": "Ping0",
+    "license": "ISC",
+    "homepage": "https://ping0.xyz"
+}
