@@ -38,17 +38,23 @@ async function example() {
 example();
 ```
 
-## Configuration Options
+### Required
 
-| Option | Type | Default | Description |
-|Args|---|---|---|
-| `api_key` | String | required | Your RapidAPI Key. |
-| `rules.max_risk_score` | Number | undefined | Block IPs with a risk score higher than this value (0-100). |
-| `rules.block_vpn` | Boolean | false | Block detected VPNs. |
-| `rules.block_proxy` | Boolean | false | Block detected Proxies. |
-| `rules.block_tor` | Boolean | false | Block Tor exit nodes. |
-| `rules.allowed_countries` | Array | undefined | Whitelist of country codes (e.g. `['US', 'CA']`). |
-| `rules.blocked_countries` | Array | undefined | Blacklist of country codes. |
+| Option  | Type   | Description |
+|--------|--------|-------------|
+| api_key | String | Your RapidAPI key |
+
+### Rules
+
+| Option                  | Type    | Default | Description |
+|------------------------|---------|---------|-------------|
+| max_risk_score         | Number  | —       | Block IPs with a risk score higher than this value (0–100) |
+| block_vpn              | Boolean | false   | Block detected VPNs |
+| block_proxy            | Boolean | false   | Block detected proxies |
+| block_tor              | Boolean | false   | Block Tor exit nodes |
+| allowed_countries      | Array   | —       | Whitelist of country codes |
+| blocked_countries      | Array   | —       | Blacklist of country codes |
+
 
 ## Response Object
 
@@ -61,3 +67,4 @@ The `check(ip)` method returns a Promise that resolves to:
   "data": { ... } // The full JSON response from Ping0 API
 }
 ```
+
